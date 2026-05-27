@@ -1,0 +1,43 @@
+---
+fullnameOverride: "vaultwarden"
+
+image:
+  pullPolicy: Always
+
+ingress:
+  enabled: true
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  className: nginx
+  hosts:
+    - host: vault.dreamcodefactory.com
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls:
+    - secretName: vault.dreamcodefactory.com-tls
+      hosts:
+        - vault.dreamcodefactory.com
+
+persistence:
+  enabled: true
+  storageClass: "gp3"
+  size: 1Gi
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+livenessProbe:
+  httpGet:
+    path: /
+    port: http
+
+readinessProbe:
+  httpGet:
+    path: /
+    port: http
