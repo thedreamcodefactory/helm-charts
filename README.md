@@ -3,7 +3,7 @@
 ## Add
 
 ```bash
-$ helm repo add dreamcodefactory https://dream-code-factory.github.io/helm-charts
+$ helm repo add dreamcodefactory https://thedreamcodefactory.github.io/helm-charts
 ```
 
 ## Update
