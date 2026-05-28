@@ -43,7 +43,7 @@ spec:
           env:
             {{- range $name, $value := .Values.env }}
             - name: {{ $name }}
-              value: {{ $value }}
+              value: {{ $value | quote }}
             {{- end }}
           ports:
             - name: http
