@@ -3,6 +3,16 @@ entries:
   vaultwarden:
   - apiVersion: v2
     appVersion: 1.36.0-alpine
+    created: "2026-06-14T14:15:43.682116792Z"
+    description: A Helm chart for vaultwarden
+    digest: 5da0d3179e0bb8180c26fc92ae49759f54b0d8a3567362bf04745539c4a0db1f
+    name: vaultwarden
+    type: application
+    urls:
+    - https://github.com/thedreamcodefactory/helm-charts/releases/download/vaultwarden-0.3.1/vaultwarden-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    appVersion: 1.36.0-alpine
     created: "2026-06-14T14:01:23.123536884Z"
     description: A Helm chart for vaultwarden
     digest: cc0f6d092f7a9cafab80f9c4e03188ced514f380f7ed5c4b8cb78bcc547e6267
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://github.com/Dream-Code-Factory/helm-charts/releases/download/vaultwarden-0.2.0/vaultwarden-0.2.0.tgz
     version: 0.2.0
-generated: "2026-06-14T14:01:23.123556962Z"
+generated: "2026-06-14T14:15:43.682136983Z"
